@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BBB16C7-98F1-47C4-AE4E-C86665A9EC0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NamayeshgahMashin</RootNamespace>
+    <AssemblyName>NamayeshgahMashin</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroshMadhinQuery.cs" />
+    <Compile Include="foroshMashin.cs" />
+    <Compile Include="frmForoshmashin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForoshmashin.Designer.cs">
+      <DependentUpon>frmForoshmashin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMashin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMashin.Designer.cs">
+      <DependentUpon>frmMashin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasolforosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasolforosh.Designer.cs">
+      <DependentUpon>frmMasolforosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoshtari.Designer.cs">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNamayeshlist_foroshMashin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNamayeshlist_foroshMashin.Designer.cs">
+      <DependentUpon>frmNamayeshlist_foroshMashin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNamayeshlist_Mashin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNamayeshlist_Mashin.Designer.cs">
+      <DependentUpon>frmNamayeshlist_Mashin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNamayeshlist_masolforosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNamayeshlist_masolforosh.Designer.cs">
+      <DependentUpon>frmNamayeshlist_masolforosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNamayeshlist_moshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNamayeshlist_moshtari.Designer.cs">
+      <DependentUpon>frmNamayeshlist_moshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mashin.cs" />
+    <Compile Include="mashinQuery.cs" />
+    <Compile Include="Masolforosh.cs" />
+    <Compile Include="masolforoshQuery.cs" />
+    <Compile Include="Moshtari.cs" />
+    <Compile Include="moshtariQuery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForoshmashin.resx">
+      <DependentUpon>frmForoshmashin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMashin.resx">
+      <DependentUpon>frmMashin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasolforosh.resx">
+      <DependentUpon>frmMasolforosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoshtari.resx">
+      <DependentUpon>frmMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNamayeshlist_foroshMashin.resx">
+      <DependentUpon>frmNamayeshlist_foroshMashin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNamayeshlist_Mashin.resx">
+      <DependentUpon>frmNamayeshlist_Mashin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNamayeshlist_masolforosh.resx">
+      <DependentUpon>frmNamayeshlist_masolforosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNamayeshlist_moshtari.resx">
+      <DependentUpon>frmNamayeshlist_moshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
